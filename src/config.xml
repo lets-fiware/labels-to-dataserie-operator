@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<operator xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="CoNWeT" name="labels-to-dataserie" version="0.3.2">
+<operator xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="FISUDA" name="labels-to-dataserie" version="0.3.2">
     <details>
         <title>Labels to dataserie operator</title> 
         <authors>Alejandro Rodriguez &lt;alex.rodriguez@conwet.com&gt;</authors>
@@ -14,6 +14,10 @@
         <homepage>https://github.com/Wirecloud/agile-dashboards</homepage>
         <issuetracker>https://github.com/Wirecloud/agile-dashboards/issues</issuetracker>
     </details>
+
+    <preferences>
+        <preference name="send_nulls" type="boolean" label="Send Nulls" description="Enable this option to propagate null values, leave it disable to filter null events" default="true" />
+    </preferences>
 
     <wiring>
         <inputendpoint name="label-list" label="Label List" type="text" friendcode="label-serie" />

@@ -27,6 +27,12 @@
     var toNumberSerie = function toNumberSerie (labels) {
         var aux = [];
 
+        if (labels == null) {
+            dataSerie = null;
+            labelSerie = null;
+            return;
+        }
+
         labels.forEach (function (data) {
             if (aux[data]) {
                 aux[data] += 1;
@@ -48,13 +54,13 @@
 
     //Push current data
     var pushData = function pushData () {
+        if (!MashupPlatform.prefs.get('send_nulls') && (dataSerie == null || labelSerie == null)) {
+            return;
+        }
         MashupPlatform.wiring.pushEvent("data-serie", dataSerie);
         MashupPlatform.wiring.pushEvent("label-serie", labelSerie);
     };
 
     init();
-    /* test-code */
-    window.labelListCallback = labelListCallback;
-    /* end-test-code */
 
 })();

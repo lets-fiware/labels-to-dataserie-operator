@@ -3,6 +3,10 @@ Labels to dataserie operator operator
 
 The Labels to dataserie operator operator is a WireCloud operator that provides the ability to transform a label series into a number series, so it can be used with other components like the `calculate-tendency operator` and the `column-chart-generator operator`.
 
+**NOTE:**
+This WireCloud operator is based on labels-to-dataserie-operator of [agile-dashboards](https://github.com/Wirecloud/agile-dashboards)
+created by CoNWeT Lab., Universidad Politecnica de Madrid and Future Internet Consulting and Development Solutions S.L..
+
 Build
 -----
 
@@ -63,4 +67,7 @@ The `Reduced label serie` its the labels associated to each of the counts, in th
 
 ## Copyright and License
 
-Copyright (c) 2016 CoNWet
+Copyright (c) 2020 Kazuhito Suda<br>
+Copyright (c) 2020 Future Internet Consulting and Development Solutions S.L.<br>
+Copyright (c) 2016 CoNWeT<br>
+Licensed under the MIT license.

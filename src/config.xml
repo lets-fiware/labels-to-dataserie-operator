@@ -2,17 +2,16 @@
 <operator xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="FISUDA" name="labels-to-dataserie" version="0.3.2">
     <details>
         <title>Labels to dataserie operator</title> 
-        <authors>Alejandro Rodriguez &lt;alex.rodriguez@conwet.com&gt;</authors>
-        <email>alex.rodriguez@conwet.com</email>
+        <authors>Kazuhito Suda, Alejandro Rodriguez</authors>
+        <email>wirecloud@fisuda.jp</email>
         <image></image>
-        <smartphoneimage></smartphoneimage>
         <description>Transform a label serie to a number serie, counting the amount of times each label is found.</description>
         <longdescription>DESCRIPTION.md</longdescription>
         <changelog>doc/changelog.md</changelog>
         <doc>doc/index.md</doc>
         <license>MIT</license>
-        <homepage>https://github.com/Wirecloud/agile-dashboards</homepage>
-        <issuetracker>https://github.com/Wirecloud/agile-dashboards/issues</issuetracker>
+        <homepage>https://github.com/lets-fiware/labels-to-dataserie-operator</homepage>
+        <issuetracker>https://github.com/lets-fiware/labels-to-dataserie-operator/issues</issuetracker>
     </details>
 
     <preferences>
